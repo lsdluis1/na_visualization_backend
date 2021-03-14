@@ -5,7 +5,7 @@ description = "na_visualization backend written in python"
 authors = ["Soheun YI <soheun@hyperithm.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "3.8.5"
 Flask=""
 flask-socketio=""
 eventlet=""
