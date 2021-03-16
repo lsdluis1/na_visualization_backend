@@ -9,7 +9,7 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
 def main():
-    return
+    return "Hello world!"
 
 
 @socketio.on('pivotal points')
