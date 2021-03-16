@@ -1,0 +1,11 @@
+version : "3.5"
+services:
+  backend:
+    container_name: backend
+    build : .
+    environment:
+      - DOCKER_COMPOSE=true
+    ports: 
+      - "80:80"
+    restart: unless-stopped
+    command: bash -c "cd /app && poetry run python3 main.py"
